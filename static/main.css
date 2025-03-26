@@ -1,0 +1,382 @@
+body{
+    background-color: #121212;
+    color: #e0e0e0;
+    /* background-image: url(/img/background-copy.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}   
+
+*{
+    box-sizing: border-box;
+}
+
+/* a.main-link{
+    text-decoration: none;
+    color: #e0e0e0;
+    margin-left: 70px;
+    display: block;
+    float: left;
+    padding:16px 5px 16px 5px;  
+}
+
+a.main-link:hover{
+    color: #ffffff;
+    background-color: #000000;
+    transition: 0.3s;
+} */
+
+/* Navbar Styles */
+.navbar {
+    background-color: #181818; /* Dark Gray */
+    padding: 15px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+}
+
+/* Logo */
+.navbar-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.navbar-logo:hover{
+    width: 80px;
+    height: 80px;
+}
+
+/* Navigation Links */
+.main-link  {
+    color: #E0E0E0; /* Light Gray */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Hover and Active Effects */
+.main-link:hover {
+    color: rgb(206, 179, 23); /* Light Blue */
+}
+
+.main-link:active {
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+}
+
+
+/* General Styles */
+.hero {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Pushes text left and image right */
+    height: 100vh;
+    padding: 0 10%;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light gray text */
+}
+
+/* Left Side - Text */
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #B0B0B0; /* Lighter gray for contrast */
+}
+
+/* Buttons */
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #45A049;
+}
+
+.btn-secondary {
+    background-color: #4DB8FF; /* Blue */
+    color: white;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #3BA6E5;
+}
+
+/* Right Side - Image */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.features {
+    padding: 3%;
+    background-color: #121826; /* Dark background */
+    color: #E0E0E0; /* Light gray text */
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin: 7%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+p.feat-text{
+    font-size: 25px;
+}
+h2.feat-head{
+    font-size: 30px;
+}
+
+i{
+    size: 50%;
+}
+
+img{
+    width: 400px;
+    border-radius: 5px;
+}
+
+img:hover{
+    width: 430px;
+    transition: 0.5s;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+.end{
+    color: lightblue;
+}
+.end:hover{
+    color: gold;
+}
+
+.foot{
+    background-color: black;
+    padding: 10%;
+    text-align: center;
+}
+
+/* footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+} */
+
+.foot-text{
+    font-size: 30px;
+}
+
+.text{
+    font-size: 24px;
+    color: #000;
+}
+
+.text:hover{
+    color: #1da1f2;
+}
+
+#nu, #nuu, #nuuu{
+    font-size: 70px;
+}
+
+.facebook, .telegram, .x, .ig, .ytube, .linkedin{
+    margin-left: 5px;
+    font-size: 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.telegram:hover{
+    color: #00aaff;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+}
+.fa-x:hover{
+    color: #1da1f2;
+    transform: rotate(10deg);
+}
+.fa-instagram:hover{
+    color: #f56040;
+}
+.fa-youtube:hover{
+    color: #cc0000;
+}
+.fa-linkedin:hover{
+    color: #005582;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    width: 75%;
+    margin-left: 150px;
+    background-color: rgb(38, 38, 38);
+}
+
+input, textarea{
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    width: 500px;
+}
+
+#checkbox{
+    width: 10px;
+    margin-right: 10px;
+}
+.agree{
+    display: inline;
+}
+
+button{
+    padding: 10px;
+    background: rgb(158, 137, 20);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+button:hover{
+    color: black;
+    background: gold;
+    transition: 0.5s;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    width: 75%;
+    margin-left: 150px;
+    background-color: rgb(38, 38, 38);
+    padding: 20px;
+}
+
+
+/* Responsive for Mobile */
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: auto;
+        padding: 50px 10%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero-image{
+        margin-top: 20px;
+    }    
+
+    .navbar {
+        background-color: #181818; /* Dark Gray */
+        padding: 15px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-logo{
+        margin-right: 15px;
+    }
+
+    a.main-link{
+        text-decoration: none;
+        color: #e0e0e0;
+        margin-left: -10px;
+        display: block;
+        float: left;
+        padding:1px 5px 1px 5px;  
+        width: 20%;
+        font-size: 15px;
+    }
+
+    .sign{
+        font-size: 1px;
+    }
+
+    .btn-secondary{
+        margin-top: 20px;
+    }
+    
+    .features {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        width: 90%;
+        margin: 7%;
+    }
+
+    .container{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        width: 90%;    
+        margin-top: 235px;
+        margin-left: 30px;
+    }
+    .contact-container{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        width: 90%;
+        margin: 7%;
+    }
+    input, textarea{
+        margin-bottom: 30px;
+        padding: 10px;
+        border: 2px solid gold;
+        border-radius: 5px;
+        width: 300px;
+    }
+}
